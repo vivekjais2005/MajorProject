@@ -95,7 +95,9 @@ app.use("/listing" ,listingsRouter);
 app.use("/listing/:id/reviews" , reviewsRouter);
 app.use("/" , userRouter);
 
-
+  app.get("/" ,(req ,res) =>{
+    res.render("/listing");
+  })
 
  //middleware
  app.use( (err , req ,res , next) => {
