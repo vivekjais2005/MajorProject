@@ -1,0 +1,137 @@
+ body{
+   font-family: "Plus Jakarta Sans" ,sans-serif !important;
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
+} 
+.container{
+    flex: 1;
+}
+
+
+/* Navbar */
+.navbar{
+    height: 5rems;
+    background-color: white;
+
+}
+.fa-compass{
+    color: #fe424d;
+    font-size: 2rem;
+}
+
+.nav-link{
+    color: #222222 !important;
+}
+
+/* Footer */
+.f-info-links a{
+    text-decoration: none;
+    color: #222222;
+}
+.f-info-links a:hover{
+    text-decoration: underline;
+}
+.f-info-links ,.f-info-socials , .f-info-brand{
+    width: 100%;
+    vertical-align: middle;
+    display:  flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.f-info-socials i{
+  margin-right: 1rem;
+}
+
+.f-info{
+    text-align: center;
+    height: 8rem;
+    background-color: #ebebeb;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+}
+
+.listing-card{
+    border: none !important;
+    margin-bottom: 2rem ;
+
+}
+
+.card-img-top{
+    border-radius:  1rem !important;
+    width: 100% !important;
+    object-fit:  cover !important;
+}
+.card-body{
+    padding: 0 !important;
+}
+.card-text p{
+    font-weight: 400;
+}
+.listing-link{
+    text-decoration: none;
+}
+/* Image Styles */
+.card-img {
+  transition: transform 0.4s ease-in-out;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.card-img:hover {
+  transform: scale(1.015); /* Only image zooms out */
+  z-index: 1;
+}
+
+/* Overlay Styles */
+.card-img-overlay {
+  transition: all 0.4s ease-in-out;
+  background-color: transparent;
+  pointer-events: none; /* Prevents blocking hover on image */
+}
+
+.card-img-overlay:hover {
+  opacity: 0.3;
+  background-color: rgba(255, 255, 255, 0.6); /* Softer white */
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(254, 66, 77, 0.5);
+}
+
+
+    /* NEW Listing Page */
+  .add-btn{
+  background-color:#fe424d !important;
+  border: none;
+  }
+
+  /* Edit Page */
+  .edit-btn{
+    background-color:#fe424d !important;
+    border: none;
+    }
+
+    /* Show Page */
+    .show-img{
+        height: 30vh;
+    }
+
+    .btns{
+        display: flex;
+    }
+    .show-card{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /* map */
+    #map 
+    { 
+      height: 400px;
+      width: 80vh;
+     }
